@@ -24,9 +24,9 @@
 // Виведи об'єкт із введеними даними в консоль і очисти значення полів
 // форми методом reset.
 
-const loginForm = document.querySelector(".login-form");
+const loginFormEl = document.querySelector(".login-form");
 
-loginForm.addEventListener("submit", handleSubmit);
+loginFormEl.addEventListener("submit", handleSubmit);
 function handleSubmit(event) {
   event.preventDefault();
   const {

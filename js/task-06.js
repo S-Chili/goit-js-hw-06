@@ -28,24 +28,24 @@
 //   border-color: #f44336;
 // }
 
-let inputValid = document.getElementById("validation-input");
+let inputValidEl = document.getElementById("validation-input");
 
-let totalLenght = inputValid.getAttribute("data-length");
-let intTotallenght = parseInt(totalLenght, 10);
+let totalLenghtEl = inputValidEl.getAttribute("data-length");
+let intTotallenghtEl = parseInt(totalLenghtEl, 10);
 
-inputValid.oninput = function () {
-  if (inputValid.value.length === intTotallenght) {
-    inputValid.classList.remove("invalid");
-    inputValid.classList.add("valid");
+inputValidEl.oninput = function () {
+  if (inputValidEl.value.length === intTotallenghtEl) {
+    inputValidEl.classList.remove("invalid");
+    inputValidEl.classList.add("valid");
   }
-  if (inputValid.value.length === 0) {
-    inputValid.classList.remove("valid");
-    inputValid.classList.remove("invalid");
+  if (inputValidEl.value.length === 0) {
+    inputValidEl.classList.remove("valid");
+    inputValidEl.classList.remove("invalid");
   }
   if (
-    inputValid.value.length !== intTotallenght &&
-    inputValid.value.length !== 0
+    inputValidEl.value.length !== intTotallenghtEl &&
+    inputValidEl.value.length !== 0
   ) {
-    inputValid.classList.add("invalid");
+    inputValidEl.classList.add("invalid");
   }
 };

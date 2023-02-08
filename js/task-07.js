@@ -7,9 +7,9 @@
 // <br />
 // <span id="text">Abracadabra!</span>
 
-let controlFontSize = document.getElementById("font-size-control");
-let text = document.getElementById("text");
+let controlFontSizeEl = document.getElementById("font-size-control");
+let textEl = document.getElementById("text");
 
-controlFontSize.oninput = function () {
-  text.style.fontSize = controlFontSize.value + "px";
+controlFontSizeEl.oninput = function () {
+  textEl.style.fontSize = controlFontSizeEl.value + "px";
 };

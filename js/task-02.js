@@ -7,12 +7,10 @@ const ingredients = [
   "Condiments",
 ];
 
-const list = document.getElementById("ingredients");
+const listEl = document.getElementById("ingredients");
 
-const listItem = ingredients
+const listItemEls = ingredients
   .map((ingredient) => `<li class="item">${ingredient}</li>`)
   .join("");
 
-console.log(listItem);
-
-list.innerHTML = listItem;
+listEl.innerHTML = listItemEls;

@@ -6,13 +6,13 @@
 //   <input type="text" id="name-input" placeholder="Please enter your name" />
 //     <h1>Hello, <span id="name-output">Anonymous</span>!</h1>
 
-const textInput = document.getElementById("name-input");
-const output = document.getElementById("name-output");
+const textInputEl = document.getElementById("name-input");
+const outputEl = document.getElementById("name-output");
 
-textInput.oninput = function () {
-  if (textInput.value === "") {
-    output.textContent = "Anonymous";
+textInputEl.oninput = function () {
+  if (textInputEl.value === "") {
+    outputEl.textContent = "Anonymous";
   } else {
-    output.textContent = textInput.value;
+    outputEl.textContent = textInputEl.value;
   }
 };

@@ -9,17 +9,18 @@
 
 // Для генерування випадкового кольору використовуй функцію getRandomHexColor.
 
-const buttonChangeColor = document.querySelector(".change-color");
-const colorValue = document.querySelector(".color");
-const bodyBackground = document.body;
-bodyBackground.setAttribute("style", "background-color:#FFFAFA");
+const buttonChangeColorEl = document.querySelector(".change-color");
+const colorValueEl = document.querySelector(".color");
+const bodyBackgroundEl = document.body;
+bodyBackgroundEl.setAttribute("style", "background-color:#FFFAFA");
 
 const changeColor = () => {
   const hexColor = getRandomHexColor();
-  bodyBackground.style.backgroundColor = hexColor;
-  colorValue.innerHTML = hexColor;
+  bodyBackgroundEl.style.backgroundColor = hexColor;
+  colorValueEl.innerHTML = hexColor;
 };
-buttonChangeColor.addEventListener("click", changeColor);
+
+buttonChangeColorEl.addEventListener("click", changeColor);
 
 const getRandomHexColor = () => {
   return `#${Math.floor(Math.random() * 16777215)

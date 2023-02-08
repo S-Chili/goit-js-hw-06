@@ -13,13 +13,13 @@ const images = [
   },
 ];
 
-const list = document.querySelector(".gallery");
+const listEl = document.querySelector(".gallery");
 
-const listItem = images
+const listItemEls = images
   .map(
     ({ url, alt }) =>
       `<li class="gallery__item new"><img src="${url}" alt="${alt}"/></li>`
   )
   .join("");
 
-list.insertAdjacentHTML("beforeend", listItem);
+listEl.insertAdjacentHTML("beforeend", listItemEls);
